@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS Boostrap via CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Animate Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- font-awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Titulo de la pestaña -->
+    <title>Medio Ambiente | Aluar</title>
+    <!-- Icono de la pestaña -->
+    <link rel="shortcut icon" href="../img/aluar_logo_mini.png">
+</head>
+
+<body>
+
+    <header>
+        <!-- Menu Boostrap-->
+        <nav class="navbar navbar-expand-sm bg-body-tertiary" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/aluar_logo.png" alt="Empresa Aluar - Logo" width="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="QuienesSomos.html">Quiénes
+                                    somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Medio Ambiente
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#Emisiones">Emisiones de gases</a></li>
+                                    <li><a class="dropdown-item" href="#Agua_potable">Gestión del agua potable</a></li>
+                                    <li><a class="dropdown-item" href="#Tratamiento_residuos">Tratamiento de
+                                            residuos</a></li>
+                                    <li><a class="dropdown-item" href="#Biodiversidad">Biodiversidad</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Aplicaciones.html">Aplicaciones</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="Medio_ambiente">
+            <section id="Emisiones">
+                <div class="bloque parallax img_emisiones">
+                    <h3>Gestión de Emisiones de gases de efecto invernadero</h3>
+                </div>
+                <!--
+                <img src="img/Gestión_de_Emisiones_de_gases_de_efecto_invernadero.jpg"
+                    alt="Aluar - Gestión de emisiones de gases de efecto invernadero">
+                -->
+                <section>
+                    <p>
+                        A fin de contribuir con las obligaciones de la Argentina respecto de la reducción de gases con
+                        potencial efecto invernadero (Acuerdo de París (dic2015) aprobado por Ley 27270), en Aluar
+                        realizamos la siguientes acciones, con el fin de contribuir con los esfuerzos globales y
+                        nacionales
+                        orientados a minimizar los efectos del cambio climático:
+                    </p>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col">
+                                <div class="card border-secondary mb-4 h-100" data-aos="fade-up">
+                                    <div class="card-body">
+                                        <p class="card-text">Producimos el aluminio líquido con tecnología Pre-baked en
+                                            la
+                                            electrólisis, con celdas
+                                            electrolíticas cerradas que maximiza el aprovechamiento de la energía.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-secondary mb-4 h-100" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="card-body">
+                                        <p class="card-text">Controlamos la ocurrencia de “efecto anódico” en las cubas
+                                            de
+                                            electrólisis, a través de un
+                                            sistema de monitoreo automático que reduce activamente la ocurrencia de
+                                            dicho
+                                            fenómeno,
+                                            evitando la producción de CF4 (tetrafluoruro de carbono).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-secondary mb-4 h-100" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="card-body">
+                                        <p class="card-text">Priorizamos la generación de energía a través de ciclos
+                                            combinados,
+                                            re-utilizando los gases
+                                            de combustión que emiten las turbinas de gas para alimentar turbinas de
+                                            vapor.
+                                            En
+                                            consecuencia
+                                            se evita parte de la emisión de CO2 libre a la atmósfera.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section id="Agua_potable">
+                <div class="bloque parallax img_agua">
+                    <h3>Gestión del agua potable</h3>
+                </div>
+                <section>
+                    <p>
+                        El agua potable se utiliza principalmente para la generación de energía en los ciclos combinados
+                        y en el enfriamiento del metal en el proceso de solidificación del producto.
+                        El consumo de agua potable proviene de la pérdida de agua por evaporación y por las purgas
+                        necesarias para mantener la conductividad. El agua utilizada ingresa luego en un circuito de
+                        riego que mantiene una forestación de 20 hectáreas con 12000 ejemplares de árboles de diferentes
+                        especies. Además, contamos con 2 plantas de barros activados para el tratamiento de efluentes
+                        líquidos. La capacidad de procesamiento de estas plantas es de 75 m3/día, en el cual el líquido
+                        tratado también se utiliza para mantener parte de la forestación. Los análisis químicos de los
+                        efluentes líquidos se llevan a cabo a través de instituciones oficiales. En Aluar no se utiliza
+                        agua potable para riego de espacios verdes.
+                    </p>
+                </section>
+            </section>
+            <section id="Tratamiento_residuos">
+                <div class="bloque parallax img_tratamiento">
+                    <h3>Tratamiento de residuos sólidos y efluentes</h3>
+                </div>
+                <section>
+                    <p>
+                        Los residuos sólidos, previa clasificación, se reciclan durante el proceso (ánodos, baño
+                        electroquímico), se reutilizan (maderas, cartones, papel, plásticos, metales) o se disponen en
+                        un
+                        relleno de seguridad (materiales peligrosos), según corresponda. El correcto funcionamiento de
+                        los
+                        rellenos de seguridad se controla a través de una red de perforaciones ubicada estratégicamente,
+                        que
+                        permite monitorear la calidad del agua subterránea.
+                        El tratamiento de los efluentes gaseosos se realiza utilizando procedimientos secos. Se utilizan
+                        materiales sólidos granulados para retener las sustancias peligrosas (fluoruro de hidrógeno e
+                        hidrocarburos aromáticos) que contienen los efluentes gaseosos de los distintos procesos que
+                        requiere la producción de aluminio. La particularidad de esta industria es que los sólidos
+                        granulados empleados en el tratamiento de efluentes gaseosos son la alúmina y el coque de
+                        petróleo.
+                        Ambas son materias primas principales para la producción de aluminio y el fluoruro de hidrógeno
+                        y
+                        los hidrocarburos, se aprovechan en los procesos productivos a los que reingresan. Es decir, el
+                        tratamiento de gases protege el ambiente y es eficiente desde el punto de vista económico dado
+                        que
+                        minimiza los requerimientos de insumos que de otra forma deberían agregarse externamente.
+                    </p>
+                </section>
+            </section>
+            <section id="Biodiversidad">
+                <div class="bloque parallax img_biodiversidad">
+                    <h3>Compromiso con la Conservación de la Biodiversidad</h3>
+                </div>
+                <section>
+                    <p>
+                        Nuestra planta de producción de aluminio está ubicada en la ciudad de Puerto Madryn, en una de
+                        las áreas naturales más bellas y de mayor biodiversidad de la costa patagónica. Gran variedad de
+                        aves y mamíferos marinos se observan en la zona, teniendo en cuenta que la ciudad es contigua a
+                        la Reserva Natural Península Valdés, declarada Patrimonio de la Humanidad - UNESCO. Una de las
+                        especies emblemáticas es la ballena franca austral, que durante los meses de junio a noviembre,
+                        cumple su ciclo reproductivo en esta zona, siendo además el principal atractivo turístico de la
+                        región. Como parte de nuestro compromiso con la protección del ambiente en esta región,
+                        colaboramos con estudios científicos sobre la interacción entre ballenas y grandes embarcaciones
+                        en la zona de los muelles en los que amarran los barcos que traen materias primas y transportan
+                        el aluminio producido. Además, desde el año 2011, colaboramos en el funcionamiento de la Reserva
+                        San Pablo de Valdés, propiedad de la Fundación Vida Silvestre Argentina. Esta reserva está
+                        exclusivamente dedicada a la investigación científica y posee una estación de campo en la cual
+                        trabajan investigadores de varias instituciones.
+                    </p>
+                </section>
+            </section>
+        </section>
+
+
+    </main>
+
+    <!-- Footer - Parte del cuerpo del html -->
+    <footer class="bg-dark text-white pt-3 pb-1">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-6">
+                    <h5 class="mb-4 font-weight-bold text-primary">Menu</h5>
+                    <p>
+                        <a href="../index.html" class="text-white">Inicio</a>
+                    </p>
+                    <p>
+                        <a href="QuienesSomos.html" class="text-white">Quiénes somos</a>
+                    </p>
+                    <p>
+                        <a href="Productos.html" class="text-white">Productos</a>
+                    </p>
+                    <p>
+                        <a href="" class="text-white">Medio Ambiente</a>
+                    </p>
+                    <p>
+                        <a href="Aplicaciones.html" class="text-white">Aplicaciones</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-4 font-weight-bold text-primary">Contacto</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i>Ruta Nacional N° A010
+                        Casilla de Correo Nº 52
+                        U9120OIA - Puerto Madryn
+                        Provincia del Chubut - Argentina
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>(54 280) 4459 000
+                    </p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i>(54 280) 4459 006
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>@Aluar todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- JS de Boostrap via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- JS Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- JS Animate Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Inicializo los efectos de la libreria Animate Scroll-->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

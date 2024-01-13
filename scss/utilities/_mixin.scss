@@ -10,9 +10,13 @@
     text-align: center;
     font-weight: 800;
     font-size: 4rem;
+    background: linear-gradient(0deg, rgba(166, 166, 166, 1)0%, rgba(255, 255, 255, 1) 32%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-@mixin textStyle($padding-top-bottom, $padding-left-right){
+@mixin textStyle($padding-top-bottom, $padding-left-right) {
     padding: $padding-top-bottom $padding-left-right;
     font-family: 'Poppins', sans-serif;
     text-align: justify;
@@ -22,6 +26,6 @@
     height: $section-size;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;
     background-attachment: fixed;
 }

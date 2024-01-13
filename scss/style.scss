@@ -5,8 +5,8 @@
 @import "utilities/variables.scss";
 @import "utilities/mixin.scss";
 
-head{
-    .logo-mini{
+head {
+    .logo-mini {
         width: 115px;
     }
 }
@@ -23,9 +23,12 @@ body {
     }
 
     main {
-        #carouselExampleFade {
-            /* Agrega un efecto al carrusel */
-            clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+        #Home {
+            padding-bottom: 5%;
+            #carouselExampleFade {
+                /* Agrega un efecto al carrusel */
+                clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+            }
         }
 
         .Quienes_somos {
@@ -43,31 +46,44 @@ body {
             }
 
             h2 {
-                background: linear-gradient(0deg, rgba(166,166,166,1)0%, rgba(255,255,255,1) 32%);
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
                 // Agrega el estilo a los titulos H2
                 // @param1: padding-top 
                 // @param2: padding-bottom
                 @include titleStyle(8%, 0%);
             }
-            .text-container{
+
+            .text-container {
                 padding-top: 5%;
+
                 p {
                     // Agrega el estilo a los parrafos
                     // @param1: padding top & bottom
                     // @param2: padding left & right
                     @include textStyle(0%, 4%);
                 }
-    
+
                 div {
                     padding: 0% 2%;
                 }
-            }            
+            }
         }
 
         #Productos {
+
+            .contenedor {
+                padding-bottom: 5%;
+            }
+
+            .parallax {
+                @include parallax(300px);
+            }
+
+            .img_productos {
+                background-image: url("../img/aluar_productos.jpeg");
+                background-color: rgb(100, 100, 100);
+                background-blend-mode: soft-light;
+            }
+
             h2 {
                 // Agrega el estilo a los titulos H2
                 // @param1: padding-top 
@@ -75,11 +91,36 @@ body {
                 @include titleStyle(8%, 3%);
             }
 
+            .text-container {
+                padding-top: 5%;
+                padding-bottom: 2%;
+
+                p {
+                    // Agrega el estilo a los parrafos
+                    // @param1: padding top & bottom
+                    // @param2: padding left & right
+                    @include textStyle(0%, 4%);
+                    text-align: center;
+                }
+
+
+
+            }
+
+            .col {
+                padding-top: 3%;
+            }
+
             .card-img-top {
                 width: 100%;
-                height: 100%;
+                height: 300px;
                 object-fit: cover;
             }
+
+            .card-title {
+                text-align: center;
+            }
+
         }
 
         #Medio_ambiente {
@@ -97,6 +138,8 @@ body {
 
                 .img_emisiones {
                     background-image: url("../img/Gestión_de_Emisiones_de_gases_de_efecto_invernadero.jpg");
+                    background-color: rgb(100, 100, 100);
+                    background-blend-mode: soft-light;
                 }
 
                 div {
@@ -104,9 +147,7 @@ body {
                         // Agrega el estilo a los titulos H3
                         // @param1: padding-top 
                         // @param2: padding-bottom
-                        @include titleStyle(250px, 0);
-                        font-size: 3em;
-                        color: whitesmoke;
+                        @include titleStyle(8%, 0);
                     }
                 }
 
@@ -133,13 +174,15 @@ body {
 
             }
 
-            #Monitoreo_aire {
+            #Agua_potable {
                 .parallax {
                     @include parallax(400px);
                 }
 
-                .img_calidad {
-                    background-image: url("../img/calidad_del_aire.jpeg");
+                .img_agua {
+                    background-image: url("../img/ingreso_a_planta.jpg");
+                    background-color: rgb(100, 100, 100);
+                    background-blend-mode: soft-light;
                 }
 
                 div {
@@ -147,9 +190,7 @@ body {
                         // Agrega el estilo a los titulos H3
                         // @param1: padding-top 
                         // @param2: padding-bottom
-                        @include titleStyle(250px, 0);
-                        font-size: 3em;
-                        color: whitesmoke;
+                        @include titleStyle(8%, 0);
                     }
                 }
 
@@ -170,6 +211,8 @@ body {
 
                 .img_tratamiento {
                     background-image: url("../img/aluar_residuos.jpg");
+                    background-color: rgb(100, 100, 100);
+                    background-blend-mode: soft-light;
                 }
 
                 div {
@@ -177,9 +220,37 @@ body {
                         // Agrega el estilo a los titulos H3
                         // @param1: padding-top 
                         // @param2: padding-bottom
-                        @include titleStyle(250px, 0);
-                        font-size: 3em;
-                        color: whitesmoke;
+                        @include titleStyle(8%, 0);
+                    }
+                }
+
+                section {
+                    p {
+                        // Agrega el estilo a los parrafos
+                        // @param1: padding top & bottom
+                        // @param2: padding left & right
+                        @include textStyle(2%, 3%);
+                    }
+                }
+            }
+
+            #Biodiversidad {
+                .parallax {
+                    @include parallax(400px);
+                }
+
+                .img_biodiversidad {
+                    background-image: url("../img/aluar_biodiversidad.jpeg");
+                    background-color: rgb(100, 100, 100);
+                    background-blend-mode: soft-light;
+                }
+
+                div {
+                    h3 {
+                        // Agrega el estilo a los titulos H3
+                        // @param1: padding-top 
+                        // @param2: padding-bottom
+                        @include titleStyle(8%, 0);
                     }
                 }
 
@@ -196,7 +267,19 @@ body {
 
         #Aplicaciones {
 
-            margin-bottom: 5%;
+            .contenido {
+                padding: 5% 0%;
+            }
+
+            .parallax {
+                @include parallax(300px);
+            }
+
+            .img_aplicaciones {
+                background-image: url("../img/Aluar_aplicaciones.jpg");
+                background-color: rgb(100, 100, 100);
+                background-blend-mode: soft-light;
+            }
 
             h2 {
                 // Agrega el estilo a los titulos H2
@@ -204,6 +287,7 @@ body {
                 // @param2: padding-bottom
                 @include titleStyle(5%, 3%);
             }
+
             /* Las imagenes dentro del las card todas seran adaptativas 
                al espacio del card */
             div {

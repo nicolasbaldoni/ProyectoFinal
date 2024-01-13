@@ -25,7 +25,7 @@
     <title>Inicio | Aluar</title>
 
     <!-- Icono de la pestaña -->
-    <link rel="shortcut icon" href="../img/aluar-logo-mini.png" class="logo-mini">
+    <link rel="shortcut icon" href="../img/aluar_logo_mini.png" class="logo-mini">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
         <nav class="navbar navbar-expand-sm bg-body-tertiary" data-bs-theme="light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="img/aluar-logo.png" alt="Empresa Aluar - Logo" width="80">
+                    <img src="img/aluar_logo.png" alt="Empresa Aluar - Logo" width="80">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -50,28 +50,29 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#Quienes_somos">Quiénes somos</a>
+                                <a class="nav-link active" aria-current="page" href="pages/QuienesSomos.html">Quiénes somos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#Productos">Productos</a>
+                                <a class="nav-link active" aria-current="page" href="pages/Productos.html">Productos</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#Medio_ambiente" role="button"
+                                <a class="nav-link dropdown-toggle" href="pages/MedioAmbiente.html" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Medio Ambiente
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#Emisiones">Emisiones de gases</a></li>
-                                    <li><a class="dropdown-item" href="#Monitoreo_aire">Calidad del aire</a></li>
-                                    <li><a class="dropdown-item" href="#Tratamiento_residuos">Tratamiento de
+                                    <li><a class="dropdown-item" href="pages/MedioAmbiente.html#Emisiones">Emisiones de gases</a></li>
+                                    <li><a class="dropdown-item" href="pages/MedioAmbiente.html#Agua_potable">Gestión del agua potable</a></li>
+                                    <li><a class="dropdown-item" href="pages/MedioAmbiente.html#Tratamiento_residuos">Tratamiento de
                                             residuos</a></li>
+                                    <li><a class="dropdown-item" href="pages/MedioAmbiente.html#Biodiversidad">Biodiversidad</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#Aplicaciones">Aplicaciones</a>
+                                <a class="nav-link active" aria-current="page" href="pages/Aplicaciones.html">Aplicaciones</a>
                             </li>
                         </ul>
 
@@ -86,8 +87,13 @@
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/aluar-empresa.png" class="d-block w-100"
+                        <img src="img/ingreso_a_planta.jpg" class="d-block w-100"
                             alt="Empresa Aluar División Primario, Puerto Madryn, Chubut" data-bs-interval="10000">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/aluar_empresa.png" class="d-block w-100"
+                            alt="Aluar Primario - producción - lingotes - transporte de aluminio"
+                            data-bs-interval="5000">
                     </div>
                     <div class="carousel-item">
                         <img src="img/aluar_empresa_02.png" class="d-block w-100"
@@ -108,334 +114,6 @@
             </div>
         </section>
 
-        
-        <section id="Productos">
-            <h2 data-aos="fade-up">Productos</h2>
-            <!-- Se utiliza las card de Boostrap -->
-            <!-- Las mismas estan en 3 columnas por fila y se adapta a la pantalla -->
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100" data-aos="fade-right">
-                            <img src="img/aluar_bobina_alambron.jpg" class="card-img-top"
-                                alt="Bobina de alambron - El alambrón de Aluminio se produce en un sistema de colada y laminación continua de alambrón.">
-                            <div class="card-body">
-                                <h5 class="card-title">Alambron</h5>
-                                <p class="card-text">El alambrón de Aluminio se produce en un sistema de colada y
-                                    laminación
-                                    continua de alambrón.
-                                    Este producto tiene una alta demanda en la industria de los conductores eléctricos y
-                                    cables, y
-                                    para
-                                    su uso en líneas de transmisión y distribución de electricidad, debido a sus buenas
-                                    propiedades
-                                    de
-                                    conductividad eléctrica, resistencia mecánica y el peso reducido comparado con el
-                                    cobre.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100" data-aos="fade-down">
-                            <img src="img/aluar_barrotes.jpg" class="card-img-top"
-                                alt="Aluar - Barratos - Aluminio - Los barrotes de Aluar se producen por colada semicontínua vertical">
-                            <div class="card-body">
-                                <h5 class="card-title">Barrotes</h5>
-                                <p class="card-text">Los barrotes de Aluar se producen por colada semicontínua vertical
-                                    (Wagstaff Air Slip). El 100%
-                                    de
-                                    los barrotes son inspeccionados por ultrasonido para la detección de fisuras e
-                                    inclusiones.
-                                    Los barrotes de serie 6xxx son homogeneizados.
-                                    Este producto se obtiene exclusivamente a partir de Aluminio primario.
-                                    Aluar provee una variedad de aleaciones estándar (principalmente series 6000 y 1000)
-                                    utilizadas
-                                    en
-                                    la construcción, el transporte y la industria electrónica.
-                                    Este producto responde a las normas internacionales ISO, EN y otras.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100" data-aos="fade-left">
-                            <img src="img/aluar_lingotes.png" class="card-img-top" alt="Aluar - Lingotes - Los lingotes de Aluminio puro para refusión de Aluar son producidos exclusivamente a partir de
-                        Aluminio primario (bajo contenido de impurezas), utilizando parámetros de proceso controlados
-                        para alcanzar una calidad óptima y una mínima pérdida de metal en el proceso de refusión
-                        posterior.">
-                            <div class="card-body">
-                                <h5 class="card-title">Lingotes</h5>
-                                <p class="card-text">Los lingotes de Aluminio puro para refusión de Aluar son producidos
-                                    exclusivamente a partir de
-                                    Aluminio primario (bajo contenido de impurezas), utilizando parámetros de proceso
-                                    controlados
-                                    para alcanzar una calidad óptima y una mínima pérdida de metal en el proceso de
-                                    refusión
-                                    posterior.
-                                    Aluar ofrece este producto en formatos de lingote de molde abierto y lingotes
-                                    producidos
-                                    por
-                                    colada contínua horizontal ( Lingote T).
-                                    Este producto se utiliza en la fabricación de menaje, envases, transporte,
-                                    construcción,
-                                    entre
-                                    otras aplicaciones.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100" data-aos="fade-right">
-                            <img src="img/aluar_placas_laminación.jpg" class="card-img-top" alt="Aluar - Placas para Laminación - Las placas para deformación plástica por laminación se producen por colada semi-contínua
-                        vertical en una variedad de aleaciones y dimensiones, utilizando exclusivamente Aluminio
-                        primario.">
-                            <div class="card-body">
-                                <h5 class="card-title">Placas para laminación</h5>
-                                <p class="card-text">Las placas para deformación plástica por laminación se producen por
-                                    colada semi-contínua
-                                    vertical en una variedad de aleaciones y dimensiones, utilizando exclusivamente
-                                    Aluminio
-                                    primario.
-                                    Este producto es utilizado en la producción de laminados principalmente en la
-                                    industria
-                                    de la
-                                    construcción, automotriz, menaje y embalaje.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="Medio_ambiente">
-            <h2>Medio Ambiente</h2>
-            <section id="Emisiones">
-
-                <div class="bloque parallax img_emisiones">
-                    <h3>Gestión de Emisiones de gases de efecto invernadero</h3>
-                </div>
-                <!--
-                <img src="img/Gestión_de_Emisiones_de_gases_de_efecto_invernadero.jpg"
-                    alt="Aluar - Gestión de emisiones de gases de efecto invernadero">
-                -->
-                <section>
-                    <p>
-                        A fin de contribuir con las obligaciones de la Argentina respecto de la reducción de gases con
-                        potencial efecto invernadero (Acuerdo de París (dic2015) aprobado por Ley 27270), en Aluar
-                        realizamos la siguientes acciones, con el fin de contribuir con los esfuerzos globales y
-                        nacionales
-                        orientados a minimizar los efectos del cambio climático:
-                    </p>
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                                <div class="card border-secondary mb-4 h-100" data-aos="fade-up">
-                                    <div class="card-body">
-                                        <p class="card-text">Producimos el aluminio líquido con tecnología Pre-baked en
-                                            la
-                                            electrólisis, con celdas
-                                            electrolíticas cerradas que maximiza el aprovechamiento de la energía.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-secondary mb-4 h-100" data-aos="fade-up" data-aos-delay="300">
-                                    <div class="card-body">
-                                        <p class="card-text">Controlamos la ocurrencia de “efecto anódico” en las cubas
-                                            de
-                                            electrólisis, a través de un
-                                            sistema de monitoreo automático que reduce activamente la ocurrencia de
-                                            dicho
-                                            fenómeno,
-                                            evitando la producción de CF4 (tetrafluoruro de carbono).</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-secondary mb-4 h-100" data-aos="fade-up" data-aos-delay="600">
-                                    <div class="card-body">
-                                        <p class="card-text">Priorizamos la generación de energía a través de ciclos
-                                            combinados,
-                                            re-utilizando los gases
-                                            de combustión que emiten las turbinas de gas para alimentar turbinas de
-                                            vapor.
-                                            En
-                                            consecuencia
-                                            se evita parte de la emisión de CO2 libre a la atmósfera.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <section id="Monitoreo_aire">
-                <div class="bloque parallax img_calidad">
-                    <h3>Monitoreo de la calidad del aire en la ciudad</h3>
-                </div>
-                <section>
-                    <p>
-                        A fin de verificar la eficacia de los dispositivos e instalaciones de captación y tratamiento de
-                        los
-                        efluentes gaseosos, operamos una red de monitoreo de la calidad del aire, orientada a evaluar el
-                        impacto de las emisiones de fluoruros en distintos puntos del ejido municipal.
-                    </p>
-                </section>
-            </section>
-            <section id="Tratamiento_residuos">
-                <div class="bloque parallax img_tratamiento">
-                    <h3>Tratamiento de residuos sólidos y efluentes</h3>
-                </div>
-                <section>
-                    <p>
-                        Los residuos sólidos, previa clasificación, se reciclan durante el proceso (ánodos, baño
-                        electroquímico), se reutilizan (maderas, cartones, papel, plásticos, metales) o se disponen en
-                        un
-                        relleno de seguridad (materiales peligrosos), según corresponda. El correcto funcionamiento de
-                        los
-                        rellenos de seguridad se controla a través de una red de perforaciones ubicada estratégicamente,
-                        que
-                        permite monitorear la calidad del agua subterránea.
-                        El tratamiento de los efluentes gaseosos se realiza utilizando procedimientos secos. Se utilizan
-                        materiales sólidos granulados para retener las sustancias peligrosas (fluoruro de hidrógeno e
-                        hidrocarburos aromáticos) que contienen los efluentes gaseosos de los distintos procesos que
-                        requiere la producción de aluminio. La particularidad de esta industria es que los sólidos
-                        granulados empleados en el tratamiento de efluentes gaseosos son la alúmina y el coque de
-                        petróleo.
-                        Ambas son materias primas principales para la producción de aluminio y el fluoruro de hidrógeno
-                        y
-                        los hidrocarburos, se aprovechan en los procesos productivos a los que reingresan. Es decir, el
-                        tratamiento de gases protege el ambiente y es eficiente desde el punto de vista económico dado
-                        que
-                        minimiza los requerimientos de insumos que de otra forma deberían agregarse externamente.
-                    </p>
-                </section>
-            </section>
-        </section>
-
-        <section id="Aplicaciones">
-            <h2>Aplicaciones</h2>
-            <div class="container">
-                <div class="row row-cols-1 g-4">
-                    <div class="col">
-                        <div class="card mb-3" data-aos="zoom-in-up">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/aluar-arquitectura.jpg" class="img-fluid rounded-start" alt="Aplicaciones del aluminio - Arquitectura">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Arquitectura</h5>
-                                        <p class="card-text">Para la arquitectura, las propiedades más importantes que presenta el aluminio son:</p>
-                                        <ul>
-                                            <li>Durabilidad</li>
-                                            <li>Flexibilidad</li>
-                                            <li>Ligereza</li>
-                                            <li>Reciclable</li>
-                                            <li>Economía</li>
-                                            <li>Versatilidad</li>
-                                            <li>Resistencia a la corrosión</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card mb-3" data-aos="zoom-in-up">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/aluar-transporte.png" class="img-fluid rounded-start" alt="Aplicaciones del aluminio - Transporte">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Transporte</h5>
-                                        <p class="card-text">Para el transporte, las propiedades más importantes que presenta el aluminio son:</p>
-                                        <ul>
-                                            <li>Ligereza</li>
-                                            <li>Seguridad</li>
-                                            <li>Versatilidad</li>
-                                            <li>Costo-beneficio</li>
-                                            <li>Estilo</li>
-                                            <li>Durabilidad</li>
-                                            <li>Reciclable</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card mb-3" data-aos="zoom-in-up">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/aluar-packaging.png" class="img-fluid rounded-start" alt="Aplicaciones del aluminio - Packaging">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Packaging</h5>
-                                        <p class="card-text">Para la vida diaria, el aluminio brinda las siguientes propiedades:</p>
-                                        <ul>
-                                            <li>Decoración</li>
-                                            <li>Conducción del calor</li>
-                                            <li>Ligereza</li>
-                                            <li>Maleabilidad</li>
-                                            <li>Protección</li>
-                                            <li>Ahorro de recursos</li>
-                                            <li>Reciclable</li>
-                                            <li>Higiénico y seguro</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card mb-3" data-aos="zoom-in-up">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/aluar-electronica.png" class="img-fluid rounded-start" alt="Aplicaciones del aluminio - Electronica">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Electronica</h5>
-                                        <p class="card-text">En el ámbito tecnológico, el aluminio brinda las siguientes propiedades:</p>
-                                        <ul>
-                                            <li>Conducción de electricidad</li>
-                                            <li>Ligereza</li>
-                                            <li>Maleabilidad</li>
-                                            <li>Ahorro de recursos</li>
-                                            <li>Reciclable</li>
-                                            <li>Versatilidad</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card mb-3" data-aos="zoom-in-up">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/aluar-conductores.png" class="img-fluid rounded-start" alt="Aplicaciones del aluminio - Conductores Electricos">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Conductores Electricos</h5>
-                                        <p class="card-text">En el ámbito eléctrico, el aluminio brinda las siguientes propiedades:</p>
-                                        <ul>
-                                            <li>Elevada conductividad eléctrica</li>
-                                            <li>Ligereza</li>
-                                            <li>Resistencia a la corrosión</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
     </main>
 
@@ -499,24 +177,6 @@
     <!-- Inicializo los efectos de la libreria Animate Scroll-->
     <script>
         AOS.init();
-    </script>
-
-    <!-- JS para aplicar logica al boton "Leer más"-->
-    <script>
-        let btnHideText = document.getElementById('btnHideText');
-        let hideText = document.getElementById('hideText');
-
-        btnHideText.addEventListener('click', toggleText);
-
-        function toggleText() {
-            hideText.classList.toggle('show');
-
-            if (hideText.classList.contains('show')) {
-                btnHideText.innerHTML = 'Leer menos'
-            } else {
-                btnHideText.innerHTML = 'Leer más'
-            }
-        }
     </script>
 
 </body>
