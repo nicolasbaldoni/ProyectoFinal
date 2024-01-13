@@ -1,0 +1,260 @@
+/* Import de la font de google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Roboto:ital,wght@1,100&display=swap');
+
+//Imports
+@import "utilities/variables.scss";
+@import "utilities/mixin.scss";
+
+head{
+    .logo-mini{
+        width: 115px;
+    }
+}
+
+body {
+    /*Color de fondo principal*/
+    background: $bg-color-principal;
+    font-family: 'Poppins', sans-serif;
+
+    header {
+        nav {
+            background-color: $bg-color-nav;
+        }
+    }
+
+    main {
+        #carouselExampleFade {
+            /* Agrega un efecto al carrusel */
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
+        }
+
+        .Quienes_somos {
+
+            padding-bottom: 5%;
+
+            .parallax {
+                @include parallax(300px);
+            }
+
+            .img_quienes_somos {
+                background-image: url("../img/Aluar_Empresa_Quienes_somos.jpeg");
+                background-color: rgb(100, 100, 100);
+                background-blend-mode: soft-light;
+            }
+
+            h2 {
+                background: linear-gradient(0deg, rgba(166,166,166,1)0%, rgba(255,255,255,1) 32%);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                // Agrega el estilo a los titulos H2
+                // @param1: padding-top 
+                // @param2: padding-bottom
+                @include titleStyle(8%, 0%);
+            }
+            .text-container{
+                padding-top: 5%;
+                p {
+                    // Agrega el estilo a los parrafos
+                    // @param1: padding top & bottom
+                    // @param2: padding left & right
+                    @include textStyle(0%, 4%);
+                }
+    
+                div {
+                    padding: 0% 2%;
+                }
+            }            
+        }
+
+        #Productos {
+            h2 {
+                // Agrega el estilo a los titulos H2
+                // @param1: padding-top 
+                // @param2: padding-bottom
+                @include titleStyle(8%, 3%);
+            }
+
+            .card-img-top {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        #Medio_ambiente {
+            h2 {
+                // Agrega el estilo a los titulos H2
+                // @param1: padding-top 
+                // @param2: padding-bottom
+                @include titleStyle(8%, 3%);
+            }
+
+            #Emisiones {
+                .parallax {
+                    @include parallax(400px);
+                }
+
+                .img_emisiones {
+                    background-image: url("../img/Gestión_de_Emisiones_de_gases_de_efecto_invernadero.jpg");
+                }
+
+                div {
+                    h3 {
+                        // Agrega el estilo a los titulos H3
+                        // @param1: padding-top 
+                        // @param2: padding-bottom
+                        @include titleStyle(250px, 0);
+                        font-size: 3em;
+                        color: whitesmoke;
+                    }
+                }
+
+                section {
+                    p {
+                        // Agrega el estilo a los parrafos
+                        // @param1: padding top & bottom
+                        // @param2: padding left & right
+                        @include textStyle(2%, 3%);
+                    }
+
+                    .container {
+                        align-items: center;
+                        padding-bottom: 5%;
+
+                        .card {
+                            .card-body {
+                                background-color: $bg-color-principal;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            #Monitoreo_aire {
+                .parallax {
+                    @include parallax(400px);
+                }
+
+                .img_calidad {
+                    background-image: url("../img/calidad_del_aire.jpeg");
+                }
+
+                div {
+                    h3 {
+                        // Agrega el estilo a los titulos H3
+                        // @param1: padding-top 
+                        // @param2: padding-bottom
+                        @include titleStyle(250px, 0);
+                        font-size: 3em;
+                        color: whitesmoke;
+                    }
+                }
+
+                section {
+                    p {
+                        // Agrega el estilo a los parrafos
+                        // @param1: padding top & bottom
+                        // @param2: padding left & right
+                        @include textStyle(2%, 3%);
+                    }
+                }
+            }
+
+            #Tratamiento_residuos {
+                .parallax {
+                    @include parallax(400px);
+                }
+
+                .img_tratamiento {
+                    background-image: url("../img/aluar_residuos.jpg");
+                }
+
+                div {
+                    h3 {
+                        // Agrega el estilo a los titulos H3
+                        // @param1: padding-top 
+                        // @param2: padding-bottom
+                        @include titleStyle(250px, 0);
+                        font-size: 3em;
+                        color: whitesmoke;
+                    }
+                }
+
+                section {
+                    p {
+                        // Agrega el estilo a los parrafos
+                        // @param1: padding top & bottom
+                        // @param2: padding left & right
+                        @include textStyle(2%, 3%);
+                    }
+                }
+            }
+        }
+
+        #Aplicaciones {
+
+            margin-bottom: 5%;
+
+            h2 {
+                // Agrega el estilo a los titulos H2
+                // @param1: padding-top 
+                // @param2: padding-bottom
+                @include titleStyle(5%, 3%);
+            }
+            /* Las imagenes dentro del las card todas seran adaptativas 
+               al espacio del card */
+            div {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+    }
+
+    footer {
+        div {
+            div {
+                div {
+                    p {
+                        padding-top: 0;
+                        font-style: normal;
+                        opacity: 100%;
+
+                        a {
+                            text-decoration: none;
+                        }
+
+                        i {
+                            padding-right: 2%;
+                        }
+                    }
+                }
+            }
+
+            p {
+                padding-top: 3%;
+                font-style: italic;
+                text-align: center;
+                opacity: 50%;
+            }
+        }
+    }
+}
+
+/* Muestra u oculta el texto con el btn Leer más */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Fin de mostrar u ocultar texto */

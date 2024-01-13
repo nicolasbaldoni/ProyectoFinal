@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* Import de la font de google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Roboto:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;700;800&family=Poppins:wght@100;300;400&family=Roboto:ital,wght@1,100&display=swap");
+head .logo-mini {
+  width: 115px; }
+
+body {
+  /*Color de fondo principal*/
+  background: #F8F9FA;
+  font-family: 'Poppins', sans-serif; }
+  body header nav {
+    background-color: #002244; }
+  body main #carouselExampleFade {
+    /* Agrega un efecto al carrusel */
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%); }
+  body main .Quienes_somos {
+    padding-bottom: 5%; }
+    body main .Quienes_somos .parallax {
+      height: 300px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed; }
+    body main .Quienes_somos .img_quienes_somos {
+      background-image: url("../img/Aluar_Empresa_Quienes_somos.jpeg");
+      background-color: #646464;
+      background-blend-mode: soft-light; }
+    body main .Quienes_somos h2 {
+      background: linear-gradient(0deg, #a6a6a6 0%, white 32%);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-top: 8%;
+      padding-bottom: 0%;
+      padding-left: 0%;
+      padding-right: 0%;
+      font-family: 'Noto Sans', sans-serif;
+      text-align: center;
+      font-weight: 800;
+      font-size: 4rem; }
+    body main .Quienes_somos .text-container {
+      padding-top: 5%; }
+      body main .Quienes_somos .text-container p {
+        padding: 0% 4%;
+        font-family: 'Poppins', sans-serif;
+        text-align: justify; }
+      body main .Quienes_somos .text-container div {
+        padding: 0% 2%; }
+  body main #Productos h2 {
+    padding-top: 8%;
+    padding-bottom: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem; }
+  body main #Productos .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  body main #Medio_ambiente h2 {
+    padding-top: 8%;
+    padding-bottom: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem; }
+  body main #Medio_ambiente #Emisiones .parallax {
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  body main #Medio_ambiente #Emisiones .img_emisiones {
+    background-image: url("../img/Gestión_de_Emisiones_de_gases_de_efecto_invernadero.jpg"); }
+  body main #Medio_ambiente #Emisiones div h3 {
+    padding-top: 250px;
+    padding-bottom: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem;
+    font-size: 3em;
+    color: whitesmoke; }
+  body main #Medio_ambiente #Emisiones section p {
+    padding: 2% 3%;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify; }
+  body main #Medio_ambiente #Emisiones section .container {
+    align-items: center;
+    padding-bottom: 5%; }
+    body main #Medio_ambiente #Emisiones section .container .card .card-body {
+      background-color: #F8F9FA; }
+  body main #Medio_ambiente #Monitoreo_aire .parallax {
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  body main #Medio_ambiente #Monitoreo_aire .img_calidad {
+    background-image: url("../img/calidad_del_aire.jpeg"); }
+  body main #Medio_ambiente #Monitoreo_aire div h3 {
+    padding-top: 250px;
+    padding-bottom: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem;
+    font-size: 3em;
+    color: whitesmoke; }
+  body main #Medio_ambiente #Monitoreo_aire section p {
+    padding: 2% 3%;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify; }
+  body main #Medio_ambiente #Tratamiento_residuos .parallax {
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  body main #Medio_ambiente #Tratamiento_residuos .img_tratamiento {
+    background-image: url("../img/aluar_residuos.jpg"); }
+  body main #Medio_ambiente #Tratamiento_residuos div h3 {
+    padding-top: 250px;
+    padding-bottom: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem;
+    font-size: 3em;
+    color: whitesmoke; }
+  body main #Medio_ambiente #Tratamiento_residuos section p {
+    padding: 2% 3%;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify; }
+  body main #Aplicaciones {
+    margin-bottom: 5%;
+    /* Las imagenes dentro del las card todas seran adaptativas 
+               al espacio del card */ }
+    body main #Aplicaciones h2 {
+      padding-top: 5%;
+      padding-bottom: 3%;
+      padding-left: 0%;
+      padding-right: 0%;
+      font-family: 'Noto Sans', sans-serif;
+      text-align: center;
+      font-weight: 800;
+      font-size: 4rem; }
+    body main #Aplicaciones div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  body footer div div div p {
+    padding-top: 0;
+    font-style: normal;
+    opacity: 100%; }
+    body footer div div div p a {
+      text-decoration: none; }
+    body footer div div div p i {
+      padding-right: 2%; }
+  body footer div p {
+    padding-top: 3%;
+    font-style: italic;
+    text-align: center;
+    opacity: 50%; }
+
+/* Muestra u oculta el texto con el btn Leer más */
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+/* Fin de mostrar u ocultar texto */
